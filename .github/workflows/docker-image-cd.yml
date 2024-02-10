@@ -1,0 +1,21 @@
+name: Docker Image CD
+
+on:
+  workflow_run:
+    workflows: ["Docker Image CI"]
+    types:
+      - completed
+
+jobs:
+
+  build:
+
+    runs-on: self-hosted
+
+    steps:
+    - name: Pull Docker image
+      run: sudo docker pull gsandeep04/wild-oasis:latest
+    - name: Delete Old docker container
+      run: sudo docker rm -f wild-oasis-container || true
+    - name: Run Docker Container
+      run: sudo docker run -d -p 8080:8080 --name wild-oasis-container gsandeep04/wild-oasis
