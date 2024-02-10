@@ -7,11 +7,8 @@ on:
       - completed
 
 jobs:
-
   build:
-
     runs-on: self-hosted
-
     steps:
     - name: Pull Docker image
       run: sudo docker pull gsandeep04/wild-oasis:latest
