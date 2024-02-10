@@ -50,7 +50,7 @@
                     </excludes>
                     <mainClass>com.thewildoasis.TheWildOasisApplication</mainClass>
                     <skip>false</skip>
-                    <finalName>TheWildOasis-${project.version}</finalName>
+                    <finalName>The-wild-oasis-${project.version}</finalName>
                 </configuration>
             </plugin>
         </plugins>
