@@ -4,7 +4,7 @@ This repo contains unified frontend and backed submodules along with delivery mo
 ### Backend repo
 https://github.com/CodeElixir/The-wild-oasis-backend
 
-### Backend repo
+### Frontend repo
 https://github.com/CodeElixir/The-wild-oasis-frontend
 
 ## Project Requirements/Features
